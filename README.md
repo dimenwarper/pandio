@@ -13,7 +13,7 @@ STDIN (or a file) is piped to an object called `df`. Numpy is accessed as `np`. 
 ```
 Example:
 ```
-'cut -f 1-10 data_frame.txt | pandio "log(df)"'
+'cut -f 1-10 data_frame.txt | pandio "np.log(df)"'
 ```
 
 Note this is super simplistic, and naively uses python's `exec`, so it's sort of insecure at the moment.
